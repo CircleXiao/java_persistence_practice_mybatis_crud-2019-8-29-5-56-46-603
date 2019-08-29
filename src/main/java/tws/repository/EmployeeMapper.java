@@ -7,5 +7,14 @@ import java.util.List;
 
 @Mapper
 public interface EmployeeMapper {
+	
     List<Employee> selectAll();
+
+	void insert(Employee employee);
+
+	Employee selectSingleEmployee(int id);
+
+	void updateEmployee(Employee employee);
+
+	void deleteEmployee(int id);
 }
